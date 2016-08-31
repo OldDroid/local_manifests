@@ -4,7 +4,7 @@
            fetch="https://github.com" />
 
   <project name="OldDroid/android_device_oneplus_onyx" path="device/oneplus/onyx" remote="github" revision="nougat" />
-  <project name="OldDorid/android_kernel_oneplus_onyx" path="kernel/oneplus/onyx" remote="github" revision="cm-13.0" />
+  <project name="OldDroid/android_kernel_oneplus_onyx" path="kernel/oneplus/onyx" remote="github" revision="cm-13.0" />
   <project name="TheMuppets/proprietary_vendor_oneplus" path="vendor/oneplus" remote="github" revision="cm-13.0" />
   <project name="CyanogenMod/android_external_sony_boringssl-compat" path="external/boringssl-compat" remote="github" revision="cm-13.0" />
   <project name="CyanogenMod/android_device_qcom_common" path="device/qcom/common" remote="github" revision="cm-13.0" />
