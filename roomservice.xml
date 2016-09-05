@@ -3,15 +3,27 @@
   <remote  name="github"
            fetch="https://github.com" />
 
+  <!-- remove aosp repos -->
   <remove-project name="platform/build" />
+  <remove-project name="platform/frameworks/av" />
+  <remove-project name="platform/frameworks/base" />
+  <remove-project name="platform/frameworks/native" />
   <remove-project name="platform/hardware/qcom/display" />
   <remove-project name="platform/hardware/qcom/media" />
 
-  <project name="OldDroid/platform_build" path="build" remote="github" revision="custom-kernel" />
+  <!-- onyx -->
   <project name="OldDroid/platform_device_oneplus_onyx" path="device/oneplus/onyx" remote="github" revision="nougat" />
   <project name="OldDroid/platform_kernel_oneplus_onyx" path="kernel/oneplus/onyx" remote="github" revision="nougat" />
-  <project name="OldDroid/platform_device_qcom_common" path="device/qcom/common" remote="github" revision="nougat" />
   <project name="TheMuppets/proprietary_vendor_oneplus" path="vendor/oneplus" remote="github" revision="cm-13.0" />
+
+  <!-- patched repos -->
+  <project name="OldDroid/platform_build" path="build" remote="github" revision="custom-kernel" />
+  <project name="OldDroid/platform_device_qcom_common" path="device/qcom/common" remote="github" revision="nougat" />
+  <project name="OldDroid/platform_frameworks_av" path="frameworks/av" remote="github" revision="nougat" />
+  <project name="OldDroid/platform_frameworks_base" path="frameworks/base" remote="github" revision="nougat" />
+  <project name="OldDroid/platform_frameworks_native" path="frameworks/native" remote="github" revision="nougat" />
+
+  <!-- cyanogen repos-->
   <project name="CyanogenMod/android_external_sony_boringssl-compat" path="external/boringssl-compat" remote="github" revision="cm-13.0" />
   <project name="CyanogenMod/android_external_stlport" path="external/stlport" remote="github" revision="cm-14.0" />
   <project name="CyanogenMod/android_vendor_qcom_opensource_dataservices" path="vendor/qcom/opensource/dataservices" remote="github" revision="cm-13.0" />
